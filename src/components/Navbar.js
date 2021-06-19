@@ -7,9 +7,7 @@ import MainPage from "./MainPage";
 import Admin from "./Admin";
 
 const Navbar = () => {
-const logout = () =>{
-    return document.cookie = "JSESSIONID= ; expires = Thu, 01 Jan 1970 00:00:00 GMT"
-    }
+
     const classes = useStyles();
     return (
         <div className={classes.root}>
@@ -34,7 +32,7 @@ const logout = () =>{
                         <Button size="medium" color="inherit" variant="contained">
                             <a target="_blank"
                                href="http://localhost:8008/logout"
-                            onClick={logout()}>
+                            >
                                 Logout</a>
                         </Button>
 
